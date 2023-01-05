@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./dist/output.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+  </style>
+  </style>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav
+      class="w-full py-3 fixed top-0 bg-[#FFFFFF] drop-shadow-md shadow-[#0E0505] bg-section z-10 md:px-16 pt-6 md:pt-8">
+      <!--Flex Container-->
+      <div class="flex items-center justify-between">
+        <!--Logo-->
+        <div class="cursor-pointer">
+          <a id="Home" href=""><img class="w-44 px-4" src="img/Logo.png" alt=""></a>
+        </div>
+        <ul class="hidden md:flex md:gap-6 text-card text-[#0E0505] cursor-pointer font-semibold text-base">
+          <a class="hover:bg-sub-text px-2 py-2" href="#Home">Home</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#About">About</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#Skills">Skills</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#Services">Services</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#Testimonials">Testimonials</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#Works">Work</a>
+          <a class="hover:bg-sub-text px-2 py-2" href="#Contact Us">Contact</a>
+        </ul>
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button class="px-5 outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="px-5">
+          <li class="active"><a href="#Home"
+              class="block text-lg px-2 hover:bg-[#2330A3] hover:opacity-50 py-1 pt-4  font-semibold">Home</a></li>
+          <li><a href="#About"
+              class="block text-lg px-2 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">About</a></li>
+          <li><a href="#Skills"
+              class="block text-lg px-2 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">Skills</a>
+          </li>
+          <li><a href="#Services"
+              class="block text-lg px-2 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">Services</a>
+          </li>
+          <li><a href="#Testimonials"
+              class="block text-lg px-1 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">Testimonials</a>
+          </li>
+          <li><a href="#Work"
+              class="block text-lg px-2 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">Work</a></li>
+          <li><a href="#Contact Us"
+              class="block text-lg px-2 py-1 hover:bg-[#2330A3] hover:opacity-50 transition duration-300">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+  </header>
+  <section id="Home" class="bg-[#2330A3] text-[#F3F3F3] md:mt-4 md:px-20">
+    <div class="flex flex-col md:flex-row justify-center gap-12 items-center">
+      <!-- content-->
+      <div class="flex-1 px-10 pt-32 md:pt-8">
+        <p class="font-bold text-xl text-center md:text-start pb-4">Hi,
+          I’m Abdussomad
+        </p>
+        <h1 class="font-bold text-center md:font-extrabold text-5xl md:text-7xl md:text-left md:pb-2">Building your
+          ideas &
+          Product with Suitable Solutions.</h1>
+        <p class="font-bold pb-3 text-center text-lg md:text-2xl mb-3 mt-2 md:text-left text-[#E2BF08]">Create -
+          Design - Code</p>
+        <div class="flex justify-center md:justify-start cursor-pointer">
+          <a class="md:text-left bg-[#FFF] text-[#000000] px-6 py-3 font-bold text-xl"
+            href="https://api.whatsapp.com/send/?phone=2348162327327&text&type=phone_number&app_absent=0"
+            target="_blank">HIRE ME</a>
+        </div>
+      </div>
+      <!--image-->
+      <div class="flex justify-center flex-1 ">
+        <img class="pt-0 md:pt-32 w-5/6 h-5/6 sm:h-3/4 md:w-full md:h-full" src="img/Abdussomad Landing Page.png"
+          alt="">
+      </div>
+    </div>
+  </section>
+  <section id="About">
+    <h1 class="text-center pt-10 md:pt-24 font-bold text-4xl text-[#2330A3] pb-4 md:pb-16">ABOUT ME</h1>
+    <div class="flex flex-col md:flex-row justify-center">
+      <div class="flex-1 px-10 md:px-16">
+        <img class="w-full md:shadow-xl" src="img/About Photo Frame.png" alt="">
+      </div>
+      <div class="flex-1  md:pr-24">
+        <h3 class="pt-10 px-8 md:px-0 md:pt-8 font-bold text-3xl text-[#2330A3]">Better Design, Better Experience</h3>
+        <br>
+        <p class="px-8 md:px-0 text-justify font-medium text-lg md:text-xl">I'm a multi-disciplinary maker with years of
+          experience in a wide range discplines, principles, methods, and with design, and implementations. I design and
+          build digital products.
+
+          <br> <br>
+          I'm always excited to apply my skills to begin frictionless product solutions that afterwards enhance end
+          users' overall insight, and to present strategies and mentor product creators in order to produce more mindful
+          products. My creative flair and design skills help me create projects that pique the interests of clients and
+          provide practical solutions to their needs.
+
+          My attraction for imagination and my ability in designs assist me with making projects that catch
+          clients' attention and give functional answers for their requirements.
+          <br><br>
+          I have continuously made the innovation business my primary focus in order to increase my impact on the daily
+          routines of online clients and widen my reach. One of my strong abilities is coming uo with effective
+          solutions for difficult problems quickly. Because of this, I routinely blend in with organizations and am
+          willing to work with teams that prioritize the customer experience. I have taken part in volunteer programs
+          that use innovative strategies to tell the strories of low-pay networks and their significant issues while
+          helping them create a greener future.
+
+          I have participated in free chipping in projects that utilize creative plans to portray the tales of
+          low-pay networks and their major problems while assisting them with building a greener future.
+
+          <br><br>
+          <span class="font-bold animate-ping">I’m Awesome UI/UX, I’m Magical, I’m Talented.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="Skills" class="px-5 md:px-24 md:pt-24">
+    <h1 class="pt-8 text-center md:pt-16 font-bold text-4xl text-[#2330A3] pb-8 md:pb-16">SKILLS</h1>
+    <div class="md:grid px-4 md:px-0 grid-cols-2 md:gap-12">
+      <div>
+        <div class="flex">
+          <div class="mb-1 text-2xl font-medium">HTML</div>
+        </div>
+        <div class="mb-4 w-full h-4 md:h-10 bg-[#0B0303] rounded-full dark:bg-gray-700">
+          <div class="h-4 md:h-10 bg-[#3DF8BE] rounded-full" style="width: 95%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="mb-1 text-2xl font-medium">Tailwind CSS</div>
+        </div>
+        <div class="mb-4 w-full h-4 md:h-10 bg-[#0B0303] rounded-full dark:bg-gray-700">
+          <div class="h-4 md:h-10 bg-[#3DF8BE] rounded-full" style="width: 70%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="mb-1 text-2xl font-medium">Graphic Design</div>
+        </div>
+        <div class="mb-4 w-full h-4 md:h-10 bg-[#0B0303] rounded-full dark:bg-gray-700">
+          <div class="h-4 md:h-10 bg-[#3DF8BE] rounded-full" style="width: 90%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="mb-1 text-2xl font-medium">Javascript</div>
+        </div>
+        <div class="mb-4 w-full h-4 md:h-10 bg-[#0B0303] rounded-full dark:bg-gray-700">
+          <div class="h-4 md:h-10 bg-[#3DF8BE] rounded-full" style="width: 30%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="mb-1 text-2xl font-medium">User Interface Design</div>
+        </div>
+        <div class="mb-4 w-full h-4 md:h-10 bg-[#0B0303] rounded-full dark:bg-gray-700">
+          <div class="h-4 md:h-10 bg-[#3DF8BE] rounded-full" style="width: 80%"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex">
+          <div class="mb-1 text-2xl font-medium">React</div>
+        </div>
+        <div class="mb-4 w-full h-4 md:h-10 bg-[#0B0303] rounded-full dark:bg-gray-700">
+          <div class="h-4 md:h-10 bg-[#3DF8BE] rounded-full" style="width: 10%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Services" class="pt-0">
+    <section class="mt-20 mb-20 text-[#2330A3] px-5 md:px-24 md:pt-24">
+      <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
+        <h3 class="text-3xl pb-18 md:pb-0 font-bold mb-2 text-gray-800">SERVICES</h3>
+        <p class="text-[#0B0303] px-5 md:px-0 text-lg md:pb-16">My approach to website design is to create a website
+          that strengthens
+          your company's brand while ensuring ease of use and simplicity for your audience.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 bg-[#FFFF] px-8 p-6">
+        <div class="bg-[#FFFF] shadow-xl px-8 p-6 hover:opacity-50">
+          <div class="flex justify-center">
+            <img class="w-16" src="img/coding.png" alt="">
+          </div>
+          <h3 class="font-bold text-lg pt-5 pb-3 text-center">WEB DESIGN</h3>
+          <p class="text-center text-[#0B0303]">Visual design. Visual design focus on digital products that determine
+            how a website looks and feels....</p>
+        </div>
+        <div class="bg-[#FFFF] shadow-xl px-8 p-6 bg-[#9F2B68] text-[#FFF] hover:opacity-50">
+          <div class="flex justify-center">
+            <img class="w-16" src="img/responsive-design.png" alt="">
+          </div>
+          <h3 class="font-bold text-lg pt-5 pb-3 text-center">RESPONSIVE DESIGN</h3>
+          <p class="text-center text-[#FFF]">Developing approach that creates dynamic changes to the appearance of a
+            website, depending on the screen size and orientation of the device being used to view it.</p>
+        </div>
+        <div class="bg-[#FFFF] shadow-xl px-8 p-6 hover:opacity-50">
+          <div class="flex justify-center">
+            <img class="w-16" src="img/cloud-service.png" alt="">
+          </div>
+          <h3 class="font-bold text-lg pt-5 pb-3 text-center">INTERPERSONAL SKILLS</h3>
+          <p class="text-center text-[#0B0303]">Interpersonal skills are the skills we use every day when we communicate
+            and interact with other people, both individually and in groups.</p>
+        </div>
+      </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 bg-[#FFFF] px-8 p-6">
+        <div class="bg-[#FFFF] shadow-xl px-8 p-6 hover:opacity-50">
+          <div class="flex justify-center">
+            <img class="w-16" src="img/technical-support.png" alt="">
+          </div>
+          <h3 class="font-bold text-lg pt-5 pb-3 text-center">TESTING AND DEBUGGING SKILLS</h3>
+          <p class="text-center text-[#0B0303]">Testing is the process using which we find errors and bugs. Debugging is
+            the process using which we correct the bugs that we found during the testing process</p>
+        </div>
+        <div class="bg-[#800020] shadow-xl px-8 p-6 hover:opacity-50">
+          <div class="flex justify-center">
+            <img class="w-16" src="img/data-science.png" alt="">
+          </div>
+          <h3 class="font-bold text-lg pt-5 pb-3 text-[#FFF] text-center">ANALYTICAL SKILLS</h3>
+          <p class="text-center text-[#FFF]">What are analytical skills?
+            Analytical skills are the ability to collect information and to thoroughly analyze that information. They
+            refer to problem-solving skills and making a decision based on insights drawn from the collected
+            information.</p>
+        </div>
+        <div class="bg-[#FFFF] shadow-xl px-8 p-6 hover:opacity-50">
+          <div class="flex justify-center">
+            <img class="w-16" src="img/coding.png" alt="">
+          </div>
+          <h3 class="font-bold text-lg pt-5 pb-3 text-center">PORTFOLIO DESIGN</h3>
+          <p class="text-center text-[#0B0303]">A portfolio is a place where you keep examples of work that you are
+            proudest of. It will often be in the form of a website, but it is also possible to use a platform such as
+            Instagram to increase your visibility. </p>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <section id="Testimonials">
+        <section class="mt-20 md:pt-24 mb-20 text-[#2330A3] md:px-24">
+          <div class="text-center">
+            <h3 class="text-3xl font-bold mb-6 md:pb-10 text-gray-800">TESTIMONIALS</h3>
+
+          </div>
+
+          <div class="grid md:grid-cols-3 px-5 md:px-0 gap-6 text-center">
+            <div>
+              <div class="block rounded-lg shadow-lg bg-[#FFFFFF]">
+                <div class="overflow-hidden rounded-t-lg h-28" style="background-color: #2330A3;"></div>
+                <div class="w-24 -mt-12 overflow-hidden border-2 border-[#FFFFFF] rounded-full mx-auto bg-white">
+                  <img src="img/IMG_2950.jpg" />
+                </div>
+                <div class="p-6">
+                  <h4 class="text-2xl font-semibold mb-4">Yusuf Olatunji</h4>
+                  <hr />
+                  <p class="mt-4">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+                      class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                      </path>
+                    </svg>
+                    “A few months ago, when I was looking for an IT placement, all I wanted to do is to find a reputable
+                    place to learn software development, One day I found TechHub in Dutse, a conducive techworkspace
+                    owned by one of our reputable lecturer, a wonder colleague full of energy and commitment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="block rounded-lg shadow-lg bg-[#FFFF] text-[#2330A3]">
+                <div class="overflow-hidden rounded-t-lg h-28" style="background-color: #2330A3;"></div>
+                <div class="w-24 -mt-12 overflow-hidden border-2 border-[#FFFFFF] rounded-full mx-auto bg-white">
+                  <img class="w-full" src="img/IMG-7832.JPG" />
+                </div>
+                <div class="p-6">
+                  <h4 class="text-2xl font-semibold mb-4">Shafihi Abdulrasheed</h4>
+                  <hr />
+                  <p class="mt-4">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+                      class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                      </path>
+                    </svg>
+                    Abdussomad's flair for IT related courses is top-notch. I must say that his work on my website,
+                    internet marketing, and analytical skills
+                    have made a significant difference to my business.
+                    The reaction and positive turnout i received from his tech services have been pretty remarkable. He
+                    is magical & Great.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="block rounded-lg shadow-lg bg-[#FFFFFF]">
+                <div class="overflow-hidden rounded-t-lg h-28" style="background-color: #2330A3;"></div>
+                <div class="w-24 -mt-12 overflow-hidden border-2 border-[#FFFFFF] rounded-full mx-auto bg-white">
+                  <img src="img/mayowa.jpg" />
+                </div>
+                <div class="p-6">
+                  <h4 class="text-2xl font-semibold mb-4">Mayowa Sunusi</h4>
+                  <hr />
+                  <p class="mt-4">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+                      class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                      </path>
+                    </svg>
+                    One of the best things that happens to me during the ASUU strike was discovering myself, i became a
+                    professional frontend developer, i can boost that i have him as a mentee, Ever since he joined the
+                    Bootcamp in January 2021, his commitment to develop a top-notch product and responsive website is
+                    very wonderful and amazing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+      </section>
+      <section id="Works" class="md:px-24 md:pt-20">
+        <div class="text-center">
+          <h3 class="text-3xl font-bold md:pb-10 mb-6 text-gray-800">WORKS</h3>
+          <div class="grid md:grid-cols-3 gap-8 bg-[#] px-8 p-6">
+            <div>
+              <img class="md:h-5/6 pb-6 md:pb-4" src="img/MacBook Pro - 1.jpg" alt="">
+              <a class="font-semibold px-3 py-2 md:py-2 bg-[#2330A3] text-2xl text-[#FFFF]"
+                href="https://abdussomad-techfin.netlify.app/" target="_blank">View Site</a>
+            </div>
+            <div>
+              <img class="md:h-5/6 pb-6 md:pb-4" src="img/Screenshot 2022-09-20 182333.jpg" alt="">
+              <a class="font-semibold px-3 py-2 bg-[#2330A3] text-2xl text-[#FFFF]"
+                href="https://abdussomad-hotelmania.netlify.app/" target="_blank">View Site</a>
+            </div>
+            <div>
+              <img class="md:h-5/6 pb-6 md:pb-4" src="img/IMG-8277.jpg" alt="">
+              <a class="font-semibold px-3 py-3 bg-[#2330A3] text-2xl text-[#FFFF]"
+                href="https://www.behance.net/abdussoibrahim/" target="_blank">For Graphics & UI</a>
+            </div>
+
+            <div>
+              <img class="md:h-5/6 pb-6 md:pb-4"
+                src="img//screencapture-abdussomad-covid19-netlify-app-2022-11-29-21_33_56 1.png" alt="">
+              <a class="font-semibold px-3 py-2 md:py-2 bg-[#2330A3] text-2xl text-[#FFFF]"
+                href="https://abdussomad-covid19.netlify.app/" target="_blank">View Site</a>
+            </div>
+            <div>
+
+            </div>
+          </div>
+      </section>
+      <section id="Contact Us">
+        <div class="bg-[#FFFF] md:pt-24 md:px-24">
+          <div class="px-4">
+            <h2 class="pt-5 md:pt-0 mb-4 text-4xl tracking-tight font-bold text-center text-[#2330A3]">Contact Us</h2>
+            <p class="mb-8 md:pb-10 font-normal text-center sm:text-xl">Got a technical issue? Want to send
+              feedback about a beta feature? Need details about our Business plan? <br></nr>Let us know.</p>
+            <form action="#" class="">
+              <div>
+                <label for="email" class="block mb-2 text-sm font-medium">Your email</label>
+                <input type="email" id="email"
+                  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  placeholder="Enter your mail here" required>
+              </div>
+              <div>
+                <label for="subject"
+                  class="block mb-2 pt-5 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input type="text" id="subject"
+                  class="block p-4 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  placeholder="Let us know how we can help you" required>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm pt-5 font-medium text-gray-900 dark:text-gray-400">Your
+                  message</label>
+                <textarea id="message" rows="6"
+                  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  placeholder="Leave a comment..."></textarea>
+              </div>
+              <button type="submit"
+                class="py-3 px-5 text-sm font-medium text-center text-[#FFFF] rounded-lg bg-[#2330A3] mt-4 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="grid pt-5 md:pt-5 md:grid-cols-3 bg-[#2330A3] justify-center items-center px-10">
+        <div>
+          <img id="Home" class="w-56 cursor-pointer md:pl-16 md:py-5" src="img/Logo Mask.png" alt="">
+        </div>
+        <div>
+          <p class="pb-3 md:pb-0 font-semibold cursor-default text-lg text-[#FFFF] text-center">
+            &copy;Abdussomad_Olamilekan 2022</p>
+        </div>
+        <div class="flex-1 ">
+          <div class="md:pr-10">
+            <ul class="flex justify-center cursor-pointer md:gap-4">
+              <li class="pr-2 md:pr-0 md:pl-0"><a
+                  href="https://www.facebook.com/dhikrullah.abdussomad/photos_albums?_rdc=1&_rdr" target="_blank"><img
+                    class="w-10 h-10" src="img/facebook.png" alt=""></a></li>
+              <li class="pr-2 md:pr-0 md:pl-0"><a href="https://twitter.com/HarzkidCr8ive"><img class="w-10 h-10"
+                    src="img/twitter.png" alt=""></a></li>
+              <li class="pr-2 md:pr-0 md:pl-0"><a
+                  href="https://www.linkedin.com/in/abdussomad-olamilekan-61a907177/?trk=public-profile-join-page"
+                  target="_blank"><img class="w-10 h-10" src="img/linkedin.png" alt=""></a></li>
+              <li class="pr-2 md:pr-0 md:pl-0"><a
+                  href="https://api.whatsapp.com/send/?phone=2348162327327&text&type=phone_number&app_absent=0"
+                  target="_blank"><img class="w-10 h-10" src="img/whatsapp.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  </footer>
+</body>
+</html>
